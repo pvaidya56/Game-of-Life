@@ -220,7 +220,7 @@ class Main extends React.Component {
         <div class="card">
 
           <p>Conway's Game of Life is the most known Cellular Automaton invented by the British mathematician John Conway in 1970.
-												It is actually a zero-player game, its evolution is determined by its initial state, and a certain set of rules requiring no futher input afterwards. 
+												It is actually a zero-player game, its evolution is determined by its initial state, and a certain set of rules requiring no further input afterwards. 
 												One interacts with the Game of Life by creating an initial configuration and observing how it evolves.</p>
           <h3 style={{color: 'black'}}>Rules: </h3>
           <ul>
