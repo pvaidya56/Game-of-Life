@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {ButtonToolbar, Dropdown } from 'react-bootstrap';
 import DropdownMenu from 'react-bootstrap/DropdownMenu';
-import Card from 'react-bootstrap/Card'
 
 class Box extends React.Component {
   selectBox = () => {
@@ -218,18 +217,6 @@ class Main extends React.Component {
         cols={this.cols}
         selectBox={this.selectBox}
         />
-        {/* <Card style={{ width: '18rem' }} class="card">
-          <Card.Body>
-            <Card.Text>
-            Conway's Game of Life is the most known Cellular Automaton invented by the British mathematician John Conway in 1970.
-												It is actually a zero-player game, its evolution is determined by its initial state, and a certain set of rules requiring no futher input afterwards. 
-												One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
-            </Card.Text>
-            <Card.Subtitle className="mb-2 text-muted">Rules:</Card.Subtitle>
-            <Card.Link href="#">Card Link</Card.Link>
-            <Card.Link href="#">Another Link</Card.Link>
-          </Card.Body>
-        </Card> */}
         <div class="card">
 
           <p>Conway's Game of Life is the most known Cellular Automaton invented by the British mathematician John Conway in 1970.
