@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {ButtonToolbar, Dropdown } from 'react-bootstrap';
 import DropdownMenu from 'react-bootstrap/DropdownMenu';
+import Card from 'react-bootstrap/Card'
 
 class Box extends React.Component {
   selectBox = () => {
@@ -210,13 +211,38 @@ class Main extends React.Component {
           seed={this.seed}
           gridSize={this.gridSize} />
           <h2>Generations: {this.state.generation}</h2>
+          
         <Grid 
         gridFull={this.state.gridFull}
         rows={this.rows}
         cols={this.cols}
         selectBox={this.selectBox}
         />
-    
+        {/* <Card style={{ width: '18rem' }} class="card">
+          <Card.Body>
+            <Card.Text>
+            Conway's Game of Life is the most known Cellular Automaton invented by the British mathematician John Conway in 1970.
+												It is actually a zero-player game, its evolution is determined by its initial state, and a certain set of rules requiring no futher input afterwards. 
+												One interacts with the Game of Life by creating an initial configuration and observing how it evolves.
+            </Card.Text>
+            <Card.Subtitle className="mb-2 text-muted">Rules:</Card.Subtitle>
+            <Card.Link href="#">Card Link</Card.Link>
+            <Card.Link href="#">Another Link</Card.Link>
+          </Card.Body>
+        </Card> */}
+        <div class="card">
+
+          <p>Conway's Game of Life is the most known Cellular Automaton invented by the British mathematician John Conway in 1970.
+												It is actually a zero-player game, its evolution is determined by its initial state, and a certain set of rules requiring no futher input afterwards. 
+												One interacts with the Game of Life by creating an initial configuration and observing how it evolves.</p>
+          <h3 style={{color: 'black'}}>Rules: </h3>
+          <ul>
+            <li>Birth: Each dead cell adjacent to exactly three live neighbors will become live in the next generation.</li>
+            <li>Death by isolation: Each live cell with one or fewer live neighbors will die in the next generation.</li>
+            <li>Death by overpopulation: Each live cell with four or more live neighbors will die in the next generation.</li>
+            <li>Survival: Each live cell with either two or three live neighbors will remain alive for the next generation.</li>
+          </ul>
+        </div>
       </div>
     );
   }
